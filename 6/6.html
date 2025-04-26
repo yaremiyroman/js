@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>My 3rd Page</title>
+
+        <link rel="stylesheet" href="./styles/styles.css" />
+
+        <style>
+            /* таблиці */
+            .styled-table {
+                border: 1px solid #000;
+                width: 400px;
+                height: 200px;
+                /* border-collapse: collapse; */
+                border-spacing: 10px;
+            }
+
+            .styled-table td {
+                border: 1px solid #000;
+                padding: 5px;
+            }
+
+            /* Вендорні префікси */
+            .button {
+                -webkit-user-select: none;
+                /* Chrome/Safari */
+                -moz-user-select: none;
+                /* Firefox */
+                user-select: none;
+                /* Standard */
+            }
+
+            .input {
+                -webkit-appearance: none;
+                /* Chrome/Safari mobile */
+                appearance: none;
+                /* Standard */
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Повна таблиця -->
+        <table border="1" width="400" height="200" cellspacing="10" cellpadding="5"
+            class="styled-table">
+            <caption>Таблиця користувачів</caption>
+            <thead>
+                <tr>
+                    <th>Ім'я</th>
+                    <th>Прізвище</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="4">Іван</td>
+                    <td rowspan="2">Іванов</td>
+                </tr>
+                <tr>
+                    <td>Петро</td>
+                    <td>Петров</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Кількість користувачів: 2</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <!-- Вкладена таблиця -->
+        <table border="1">
+            <tr>
+                <td>Комірка 1</td>
+                <td>Комірка 2</td>
+            </tr>
+            <tr>
+                <td>Комірка 3</td>
+                <td>
+                    <!-- Вкладена таблиця -->
+                    <table border="1">
+                        <tr>
+                            <td>Додаткова комірка 1</td>
+                            <td>Додаткова комірка 2</td>
+                        </tr>
+                        <tr>
+                            <td>Додаткова комірка 3</td>
+                            <td>Додаткова комірка 4</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+    </body>
+
+</html>
