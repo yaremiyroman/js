@@ -1,0 +1,115 @@
+* * {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+button:focus,
+button:active {
+    outline: none;
+}
+
+body {
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    display: flex;
+    background-color: rgba(135, 206, 235, 0.25);
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+#info {
+    height: 10vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#crosses,
+#rounds {
+    width: 25%;
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+
+#crosses:not(.active),
+#rounds:not(.active) {
+    opacity: 0.5;
+}
+
+div.active {
+    color: indianred;
+    opacity: 1;
+}
+
+#title {
+    width: 50%;
+}
+
+#board {
+    height: 90vh;
+    display: flex;
+    width: calc(100%);
+    flex-wrap: wrap;
+    margin: -1px;
+}
+
+#board.final {
+    opacity: 0.25;
+    pointer-events: none;
+}
+
+.field {
+    width: calc(100% / 3);
+    height: calc(100% / 3);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid grey;
+    font-size: 40px;
+    color: black;
+}
+
+.field[data-marked="true"] {
+    pointer-events: none;
+    background: linear-gradient(-8deg, lightblue, transparent);
+}
+
+.field:not([data-marked="true"]) {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.field:nth-child(1),
+.field:nth-child(2),
+.field:nth-child(3) {
+    border-top: none;
+}
+
+.field:nth-child(6),
+.field:nth-child(9),
+.field:nth-child(3) {
+    border-right: none;
+}
+
+.field:nth-child(7),
+.field:nth-child(9),
+.field:nth-child(8) {
+    border-bottom: none;
+}
+
+.field:nth-child(7),
+.field:nth-child(1),
+.field:nth-child(4) {
+    border-left: none;
+}
+
+.field:hover {
+    background-color: gainsboro;
+}

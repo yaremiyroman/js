@@ -1,0 +1,99 @@
+* * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+}
+
+button {
+	cursor: pointer;
+	opacity: .75;
+}
+
+button:hover {
+	opacity: 1;
+}
+
+#app {
+	padding: 10px;
+}
+
+#task-list {
+	margin-bottom: 20px;
+}
+
+#task-list li {
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#task-list li button {
+	display: flex;
+	width: 22px;
+    align-items: center;
+    justify-content: center;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 9px;
+}
+
+#add-task {
+	background: palegreen;
+    border: none;
+    padding: 11px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+header {
+	background-color: paleturquoise;
+	padding: 5px;
+	display: flex;
+    justify-content: flex-end;
+}
+
+#burger-containter {
+	display: flex;
+    width: fit-content;
+	position: relative;
+}
+
+#burger-button {
+	cursor: pointer;
+	transition: all 0.1s;
+	user-select: none;
+}
+
+#burger-button:hover {
+	transform: scale(1.15);
+}
+
+#burger-menu {
+	position: absolute;
+    background: cadetblue;
+    width: 100px;
+    right: 0;
+    top: 100%;
+    z-index: 9;
+    padding: 4px;
+	flex-direction: column;
+	
+	opacity: 0;
+	visibility: hidden;
+
+	transition: opacity 0.5s;
+}
+
+#burger-menu.active {
+	visibility: visible;
+    opacity: 1;
+
+	transition: opacity 0.2s;
+}

@@ -1,0 +1,295 @@
+a {
+    text-decoration: none;
+}
+
+
+
+/* # Універсальний селектор
+
+* {
+    color: red;
+} */
+
+/* * * {
+    color: red;
+} */
+
+/* # Селектор по елементу (тегу) */
+
+p {
+    border: 1px solid black;
+}
+
+/* # Селектор по атрибуту (*, ^, $) */
+
+[class="author winter p-4"] {
+    color: blue;
+}
+/*
+[attr="value"] {
+    color: pink;
+} */
+
+[attr^="val"] {
+    color: pink;
+}
+
+[attr$="val"] {
+    color: pink;
+}
+
+[attr*="val"] {
+    color: blue;
+}
+
+/* # Селектор по класу */
+
+.footer {
+    background-color: palegreen;
+}
+
+/* # Селектор по айді */
+
+#main-paragraph {
+    background-color: blueviolet;
+}
+
+/* # Контекстні селектори (вкладені) */
+/* 
+.author {
+    font-size: 24px;
+}
+
+.footer .author {
+    font-weight: bold;
+}
+
+body .footer .author span {
+    font-size: 34px;
+} */
+
+/* # Дочірні селектори (перші потомки) > */
+
+/* .footer span {
+    font-size: 40px;
+}
+
+.footer > span {
+    color: blue;
+} */
+
+/* # Послідовність селекторів (перший на рівні) + */
+/* 
+.test-span {
+}
+
+.test-span + .test-span {
+    font-size: 40px;
+} */
+
+/* # Послідовність селекторів (всі наступні на рівні) ~ */
+/* 
+.test-span ~ .test-span {
+    font-size: 40px;
+} */
+
+/* 
+.test-list .test-list-item.item {
+    color: black;
+}
+
+.test-list li {
+    color: green;
+} */
+
+/* 
+.divClass.divClass2.divClass3.divClass4 tag[attr=value].test-class#myID.test2.class3 {
+
+}
+
+<div class="divClass1 divClass2 divClass3 divClass4">
+    <tag attr="value" class="test-class test2 class3" id="myID"></tag>
+</div> */
+
+/* 
+#test-item {
+    color: green;
+    background-color: green !important;
+}
+
+.some-list li.item.test-list-item {
+    color: palevioletred !important;
+}
+
+ul {
+    border: 1px solid brown;
+}
+
+.some-list {
+    background-color: paleturquoise;
+} */
+/* 
+
+
+* псевдоелементи   tag     атрибути псевдокласи Класи Ідентифікатори Inline Styles
+
+0       0           100          0        0        256        1             1         // common elements
+0       0           0            0        0        0          1             0         // important elements
+
+<li class="item test-list-item" id="test-item">List item 1</li>
+
+
+li.test-list-item.item#test-item {} */
+
+/* css */
+
+#test-item {
+    /* color: green; */
+}
+
+.some-list {
+    /* color: red;
+    letter-spacing: 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 300px;
+    height: 100px;
+    background-color: cornflowerblue; */
+
+    /* margin: 25px;
+
+    margin-top: 50px;
+    margin-right: 40px;
+    margin-bottom: 35px;
+    margin-left: 30px;
+
+    margin: 50px 25px;
+
+    margin: 50px 25px 75px; */
+
+    /* margin: 50px 25px 75px 60px;
+    margin-right: 100px; */
+
+    /* margin: 50px 25px;
+    margin-left: 100px; */
+}
+
+.test-span,
+.test-list-item,
+.headline .author.summer span {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.our-block {
+    width: 300px;
+    height: 100px;
+    background-color: darksalmon;
+}
+
+.our-block:hover {
+    background-color: red;
+}
+
+/* 
+.test-list-item:first-child {
+    color: blue;
+}
+
+.test-list-item:last-child {
+    color: hotpink;
+}
+
+.test-list-item:nth-child(3) {
+    color: darkorchid;
+} */
+
+/* 
+li:not(.test-list-item) {
+    font-weight: 800;
+}
+ */
+
+#secondary-paragraph {
+    position: relative;
+}
+
+#secondary-paragraph::first-letter {
+    font-size: 28px;
+    color: red;
+}
+
+#secondary-paragraph::first-line {
+    text-decoration: underline;
+}
+
+#secondary-paragraph::before {
+    content: "*";
+    position: absolute;
+    top: -13px;
+    left: -9px;
+    color: green;
+}
+
+#secondary-paragraph::after {
+    content: "😎";
+    position: absolute;
+    bottom: -13px;
+    right: -9px;
+}
+
+.test-link {
+    margin: 50px;
+    font-size: 26px;
+    display: flex;
+}
+
+
+
+
+
+a:focus {
+    color: blueviolet;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+}
+
+a:visited {
+    font-weight: 800;
+    font-size: 24px;
+}
+
+
+
+.my-input {
+    margin: 40px;
+
+    border: 2px solid darkolivegreen;
+}
+
+.my-input:focus {
+    outline: none;
+
+    border-color: red;
+}
+
+
+
+
+
+
+/*   0 0 0 2   */
+
+div > p {
+    background-color: yellow;
+}
+
+/*   0 1 4 1   */
+.class-my .class-new #id-test p.author.summer {
+    background-color: yellow;
+}

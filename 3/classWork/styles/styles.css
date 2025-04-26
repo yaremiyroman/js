@@ -1,0 +1,186 @@
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+/* Selectors */
+
+/* id selector */
+/* 
+#main-paragraph {
+    color: green;
+}
+
+#secondary-paragraph {
+    color: blue;
+} */
+
+/* tag selector */
+/* p {
+    color: crimson;
+}
+
+p {
+    color: yellow;
+}
+
+div {
+    background-color: lightblue;
+} */
+
+/* class selector */
+
+/* .author {
+    font-weight: bold;
+}
+
+.winter {
+    font-size: 28px;
+} */
+
+/* hex   0123456789abcdef */
+/* #main-paragraph {
+    color: #000000;
+    color: black;
+
+    color: #ffffff;
+    color: white;
+
+    color: #914cbcb7;
+    color: palevioletred;
+
+    color: #884b3e;
+    color: black;
+    color: white;
+    color: blue;
+    color: orange;
+
+    color: #00000055;
+
+    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    color: rgb(43, 100, 101);
+
+    color: rgba(0, 0, 0, 0.5);
+}
+
+ */
+
+/* background: chocolate url('../images/parrot_small.jpeg') no-repeat center center; */
+/* #main-paragraph {
+    background-repeat: no-repeat;
+    background-color: chocolate;
+    background-position-x: center;
+    background-position-y: center;
+    background-image: url("../images/parrot_small.jpeg");
+    background-color: red;
+
+} */
+
+/* #main-paragraph {
+    border: 5px dashed red;
+    border: 1px solid black;
+
+    border-width: 10px;
+    border-style: dashed;
+    border-color: blue;
+}
+
+ */
+
+/* // serif
+// sans-serif
+// monospace */
+
+#main-paragraph {
+    background-color: #af245a;
+
+    width: 400px;
+    height: 300px;
+
+    border: 3px solid green;
+
+    padding: 10px;
+
+    /* margin: 25px; */
+    margin: 0;
+
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Courier New", Courier, monospace;
+
+    font-family: "Chalkduster", sans-serif;
+}
+
+.text-to-align {
+    text-align: right;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.my-test-list {
+    /* padding: 20px; */
+    /* margin: 20px;
+    margin: 20px 25px 10px 0px;
+
+    margin-top: 20px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0; */
+
+    margin-left: 20px;
+
+    list-style: none;
+    list-style-image: url("../images/custom_bullet.jpg");
+}
+
+p {
+    color: red;
+}
+
+h1 {
+    color: yellow;
+}
+
+.headline {
+    background-color: blueviolet;
+}
+.content {
+    background-color: green;
+}
+.footer {
+    background-color: blueviolet;
+}
+
+.container {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.my-test-list {
+    /* padding: 20px; */
+
+    margin: 20px;
+    margin: 20px 25px 10px 0px;
+
+
+    margin: 50px 20px 50px 20px;
+    margin: 50px 20px;
+
+
+    margin-top: 20px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+
+    margin-left: 20px;
+}

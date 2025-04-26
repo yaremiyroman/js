@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>My Second Page</title>
+    </head>
+
+    <body>
+        <!-- Текстові теги -->
+        <h1>Title</h1>
+        <p>This is a paragraph.</p>
+        <br>Line 2
+
+        <strong>Important!</strong>
+        <b>Bold text</b>
+        <em>Emphasized</em>
+        <i>Italic</i>
+
+        <u>Underlined</u>
+        <small>Fine print</small>
+        <mark>Highlighted</mark>
+        <del>Deleted</del>
+        <sub>2</sub>
+        <sup>2</sup>
+        <blockquote>Quoted text</blockquote>
+        <code>console.log("Hi")</code>
+        <pre> line 1\n line 2</pre>
+
+        <!-- Приклад коду багаторівневого списку в HTML -->
+        <ul>
+            <li>Фрукти
+                <ul>
+                    <li>Яблука</li>
+                    <li>Банани</li>
+                </ul>
+            </li>
+            <li>Овочі
+                <ul>
+                    <li>Морква</li>
+                    <li>Капуста</li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Приклад коду списку описів в HTML: -->
+        <dl>
+            <dt>HTML</dt>
+            <dd>Мова розмітки, що використовується для створення веб-сторінок.</dd>
+            <dt>CSS</dt>
+            <dd>Мова стилів, яка використовується для оформлення веб-сторінок.</dd>
+        </dl>
+
+        <!-- Перенесення тексту "вручну" wbr -->
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam molestiae
+        officiis ex nam dolores voluptatum placeat illum blanditiis quo. Dicta obcaecati
+        nisi in eaque
+        natus eum sapiente verit<wbr>atis iure saepe.
+
+        <!-- DIV SPAN -->
+
+        <!-- Тег img -->
+        <img src="path_to_image.jpg" alt="Опис зображення" title="Опис зображення"
+            width="300" height="200">
+
+        <!-- Тег picture -->
+        <picture>
+            <source media="(min-width: 650px)" srcset="large.jpg">
+            <source media="(min-width: 465px)" srcset="medium.jpg">
+            <img src="small.jpg" alt="Опис зображення">
+        </picture>
+
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            <source src="audio.ogg" type="audio/ogg">
+            Ваш браузер не підтримує аудіо елемент.
+        </audio>
+
+        <video width="320" height="240" controls>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Ваш браузер не підтримує відео елемент.
+        </video>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+        <!-- Форми -->
+        <form>
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email">
+
+            <input type="submit" value="Надіслати">
+        </form>
+
+        <input type="text" name="name">
+        <input type="password" name="password">
+        <input type="submit" value="Надіслати">
+        <input type="email" name="email">
+        <input type="date" name="birthday">
+        <input type="number" name="quantity" min="1" max="10">
+
+        <input type="checkbox" name="subscribe" value="yes"> Підписатися на новини
+
+        <input type="radio" name="gender" value="male"> Чоловік
+        <input type="radio" name="gender" value="female"> Жінка
+
+        <form id="form1">
+            <input type="text" name="name">
+            <button type="submit">Надіслати</button>
+            <button type="reset">Скинути</button>
+            <button type="button" onclick="alert('Спеціальна дія виконана!')">Спеціальна
+                дія</button>
+        </form>
+
+        <form>
+            <label for="message">Ваш коментар:</label>
+            <textarea id="message" name="message" rows="4" cols="50">
+          Текст за замовчуванням, який буде в полі вводу.
+            </textarea>
+            <input type="submit" value="Надіслати">
+        </form>
+
+        <form>
+            <label for="fruit">Виберіть фрукт:</label>
+            <select id="fruit" name="fruit">
+                <option value="apple">Яблуко</option>
+                <option value="banana">Банан</option>
+                <option value="orange">Апельсин</option>
+            </select>
+            <input type="submit" value="Надіслати">
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>Контактна інформація</legend>
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Електронна пошта:</label>
+                <input type="email" id="email" name="email">
+            </fieldset>
+        </form>
+    </body>
+
+</html>
