@@ -1,0 +1,116 @@
+.clear {
+    clear: both;
+}
+
+.first {
+    background-color: red;
+
+    width: 300px;
+    height: 200px;
+
+    padding: 20px;
+    border: 4px solid blue;
+    margin: 30px;
+
+    outline: 2px solid yellowgreen;
+}
+
+.second {
+    background-color: green;
+
+    margin-bottom: 20px;
+    position: relative;
+    background: hotpink;
+    /* top: -19px;
+    left: -2px;
+    bottom: -64px; */
+}
+
+.third {
+    background-color: blue;
+}
+
+p {
+    background-color: brown;
+}
+
+ul {
+    background-color: palegoldenrod;
+}
+
+.new-span {
+    background-color: chocolate;
+    display: block;
+}
+
+.new-span-2 {
+    background-color: chartreuse;
+}
+
+.menu {
+    border: 2px solid blue;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    background-color: red;
+    display: inline;
+    text-align: center;
+}
+
+.spans-box {
+    margin: 25px;
+}
+
+.spans-box span {
+    background: green;
+}
+
+.spans-box span:nth-child(1) {
+    margin-right: 10px;
+}
+
+.spans-box span:nth-child(2) {
+    margin-left: 10px;
+}
+
+.second {
+    background-color: purple;
+}
+
+.wrapper {
+}
+
+.block {
+}
+
+.container {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.blog {
+    background: paleturquoise;
+}
+
+.blog img {
+    width: 250px;
+}
+
+body {
+    padding: 25px;
+}
+
+.square {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+}
+
+
+
+
+.text {
+background: red;
+}

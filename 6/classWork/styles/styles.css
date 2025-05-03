@@ -1,0 +1,30 @@
+/* table tr th,
+table tr td {
+    color: red;
+}
+
+p input {
+    appearance: none;
+}
+
+p input::placeholder {
+    color: red;
+} */
+
+body {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* fallback */
+
+@font-face {
+    font-family: "Playwrite";
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/playwrite.woff2') format("woff2");
+}
+
+body {
+    font-family: "Playwrite";
+    font-weight: 700;
+}
