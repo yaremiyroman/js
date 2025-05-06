@@ -1,0 +1,103 @@
+/* .clear {
+    clear: both;
+}
+
+.flex-container {
+    background: paleturquoise;
+    width: 100%;
+    padding: 20px;
+}
+
+
+.flex-element { */
+/* float: left; */
+
+/* margin-right: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.flex-element:nth-child(1) {
+    background-color: blueviolet;
+}
+
+.flex-element:nth-child(2) {
+    background-color: hotpink;
+}
+
+.flex-element:nth-child(3) {
+    background-color: wheat;
+}
+ */
+
+.flex-container {
+    background: paleturquoise;
+    width: 100%;
+    padding: 20px;
+    /* height: 400px; */
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center;
+    align-items: flex-start; */
+    flex-wrap: wrap;
+}
+
+.flex-container:before {
+    content: "";
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+}
+
+.flex-container:after {
+    content: "";
+    height: 3px;
+    background-color: green;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: rotate(90deg);
+}
+
+.flex-element {
+    /* width: 33.3%; */
+    /* width: calc(100% / 3); */
+    width: 250px;
+    height: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-element:nth-child(1) {
+    background-color: blueviolet;
+    /* order: 2; */
+    margin-right: auto;
+}
+
+.flex-element:nth-child(2) {
+    background-color: hotpink;
+    /* order: 3; */
+}
+
+.flex-element:nth-child(3) {
+    background-color: wheat;
+    /* order: 1; */
+}
+
+.flex-element:nth-child(4) {
+    background-color: seagreen;
+    /* order: 1; */
+}
+
+.flex-element:nth-child(5) {
+    background-color: mediumblue;
+    /* order: 1; */
+}

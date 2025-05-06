@@ -1,0 +1,18 @@
+.container {
+    background-color: grey;
+}
+
+header.container,
+.way-of-work.container,
+.design-layout.container {
+    background-color: #eeeff1;
+}
+
+.about-me.container {
+    background-color: #f9f9f9;
+}
+
+.projects.container,
+footer.container {
+    background-color: #34547a;
+}

@@ -12,3 +12,9 @@ ul {
     list-style: none;
 }
 
+
+html, body {
+    /* background: chocolate; */
+    height: 100%;
+}
+
