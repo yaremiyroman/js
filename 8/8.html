@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>My 8rd Page</title>
+
+        <link rel="stylesheet" href="./styles/styles.css" />
+
+        <style>
+            /* Flex container   */
+            /* дочірні елементи стають flex-елементами. */
+            .container {
+                display: flex;
+            }
+
+            /* Main axis (головна вісь): визначається властивістю flex-direction. По ній вирівнюються елементи.
+        Cross axis (перехресна вісь): перпендикулярна до головної. */
+            /* flex-direction */
+            /* flex-direction варіанти:
+row (за замовчуванням): зліва направо
+
+row-reverse: справа наліво
+
+column: зверху вниз
+
+column-reverse: знизу вгору */
+            /* Вирівнювання по головній осі */
+            /* justify-content: */
+            /* flex-start – зліва/згори
+
+flex-end – справа/знизу
+
+center – по центру
+
+space-between – рівний інтервал, крайні елементи по краях
+
+space-around – рівний простір навколо
+
+space-evenly – однаковий простір між усіма
+ */
+            /* Вирівнювання по перехресній осі */
+            /* align-items (для всіх елементів): */
+            /* stretch (за замовчуванням) – розтягує
+
+flex-start – до початку осі
+
+flex-end – до кінця осі
+
+center – по центру
+
+baseline – по базовій лінії тексту
+
+align-self (індивідуально для елемента):
+– те саме, що align-items, але для одного елемента
+ */
+            /* 5. Перенос елементів */
+            /* flex-wrap:
+nowrap (за замовчуванням)
+
+wrap – дозволяє перенос
+
+wrap-reverse – зворотний перенос */
+        </style>
+    </head>
+
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th> Тег </th>
+                    <th> Призначення </th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>
+                        header
+                    </td>
+                    <td>Шапка сторінки або секції (зазвичай містить заголовки, меню,
+                        логотип)</td>
+                </tr>
+                <tr>
+                    <td>
+                        nav
+                    </td>
+                    <td>Блок із навігаційними посиланнями </td>
+                </tr>
+                <tr>
+                    <td>
+                        main
+                    </td>
+                    <td>Основний вміст сторінки (тільки один на сторінці) </td>
+                </tr>
+                <tr>
+                    <td>
+                        section
+                    </td>
+                    <td>Семантичний розділ контенту (наприклад, блок "Новини") </td>
+                </tr>
+                <tr>
+                    <td>
+                        article
+                    </td>
+                    <td>Самостійний блок контенту (новина, пост, коментар, тощо) </td>
+                </tr>
+                <tr>
+                    <td>
+                        aside
+                    </td>
+                    <td>Додаткова інформація (сайдбар, реклама, посилання на схожі
+                        матеріали)</td>
+                </tr>
+                <tr>
+                    <td>
+                        footer
+                    </td>
+                    <td>Нижній колонтитул (контакти, авторські права, посилання) </td>
+                </tr>
+                <tr>
+                    <td>
+                        figure
+                    </td>
+                    <td>Блок для медіа з підписом (зображення, схема тощо) </td>
+                </tr>
+                <tr>
+                    <td>
+                        figcaption
+                    </td>
+                    <td>Підпис до figure
+                    </td>
+                </tr>
+                <tr>
+                    <td>time </td>
+                    <td>Позначення дати або часу </td>
+                </tr>
+                <tr>
+                    <td>mark </td>
+                    <td>Виділення важливого тексту </td>
+                </tr>
+                <tr>
+                    <td>
+                        address
+                    </td>
+                    <td>Контактна інформація </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </body>
+
+</html>
