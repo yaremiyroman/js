@@ -1,0 +1,13 @@
+table{
+    border-spacing: 0;
+    table-layout: fixed;
+    width: 1020px;
+}
+
+tr{
+    height: 50px;
+}
+
+td{
+    border: 5px solid black;
+}

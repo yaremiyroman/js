@@ -4,7 +4,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+
         <link rel="stylesheet" href="../8/classWork/styles/normalize.css">
+        <link rel="stylesheet" href="./styles/fonts.css">
         <link rel="stylesheet" href="./styles/styles.css">
 
         <title>Simple Site</title>
@@ -13,38 +19,60 @@
     <body>
 
         <header class="container">
-            <nav>
-                <ul>
-                    <li>HOME</li>
-                    <li>ABOUT</li>
-                    <li>WORKS</li>
-                    <li>PROCESS</li>
-                    <li>CONTACTS</li>
-                </ul>
-            </nav>
+            <div class="content menu">
+                <nav class="menu__nav">
+                    <ul class="menu__items">
+                        <li class="menu__item"><a href="#">HOME</a></li>
+                        <li class="menu__item"><a href="#">ABOUT</a></li>
+                        <li class="menu__item"><a href="#">WORKS</a></li>
+                        <li class="menu__item"><a href="#">PROCESS</a></li>
+                        <li class="menu__item"><a href="#">CONTACTS</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-        <div class="container design-layout">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Itaque totam
-            officia autem. Provident nam atque, tenetur corporis fugiat porro totam
-            laborum quia illum saepe commodi recusandae omnis exercitationem vero
-            sapiente.</div>
-        <div class="container about-me">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Itaque totam
-            officia autem. Provident nam atque, tenetur corporis fugiat porro totam
-            laborum quia illum saepe commodi recusandae omnis exercitationem vero
-            sapiente.</div>
-        <div class="container projects">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Itaque totam
-            officia autem. Provident nam atque, tenetur corporis fugiat porro totam
-            laborum quia illum saepe commodi recusandae omnis exercitationem vero
-            sapiente.</div>
-        <div class="container way-of-work">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Itaque totam
-            officia autem. Provident nam atque, tenetur corporis fugiat porro totam
-            laborum quia illum saepe commodi recusandae omnis exercitationem vero
-            sapiente.</div>
+        <div class="container">
+            <div class="content design-layout">
+                <h1 class="design-layout__title">Design and Layout</h1>
+                <p class="design-layout__text">Lorem Ipsum is a placeholder text commonly
+                    used in printing and web
+                    design. Lorem Ipsum has been the standard dummy text for Latin scripts
+                    since the 16th century.</p>
+                <button class="design-layout__cta">WRITE TO ME</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="content about-me">
+                <h2 class="about-me__title">About Me</h2>
+                <p class="about-me__text">
+                    Lorem Ipsum is a placeholder text commonly used in printing and web
+                    design. Lorem Ipsum has been the standard dummy text for Latin scripts
+                    since the 16th century.
+                </p>
+            </div>
+        </div>
+        <div class="container projects">
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit.
+                Itaque totam
+                officia autem. Provident nam atque, tenetur corporis fugiat porro totam
+                laborum quia illum saepe commodi recusandae omnis exercitationem vero
+                sapiente.</div>
+        </div>
+        <div class="container way-of-work">
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit.
+                Itaque totam
+                officia autem. Provident nam atque, tenetur corporis fugiat porro totam
+                laborum quia illum saepe commodi recusandae omnis exercitationem vero
+                sapiente.</div>
+        </div>
         <footer class="container">
-            footerfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooter
+            <div class="content">
+                footerfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooterfooter
+            </div>
         </footer>
 
     </body>

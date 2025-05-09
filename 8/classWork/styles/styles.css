@@ -25,6 +25,10 @@ body {
     font-size: 36px;
 }
 
+.post__title--recent {
+    color: red;
+}
+
 .post__body {
     margin: 0 0 10px;
 }

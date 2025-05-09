@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-work2</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <div class="main_img">
+        <h1>Зв'язатись з нами</h1>
+    </div>
+    <div class="main-selecctor">
+        <div class="menu">
+            <h3>Меню</h3>
+            <a href="../index.html">Головна</a>
+            <a href="./about.html">Інформація</a>
+            <a href="./articles.html">Статті</a>
+            <a href="./contacts.html">Контакти</a> <!--Тут я попрацювала з формою-->
+            <a href="./gallery.html">Галерея</a>
+            <a href="./another.html">Інші породи</a> <!--Тут я попрацювала з якорями-->
+        </div>
+
+        <form>
+            <fieldset>
+                <legend>Контактна інформація</legend>
+                <div>
+                    <label for="name">Ім'я:</label>
+                    <input type="text" id="name" name="name" class="form-text">
+                </div>
+                <div>
+                    <label for="email">Електронна пошта:</label>
+                    <input type="email" id="email" name="email" class="form-text">
+                </div>
+                <div>
+                    <label for="tel">Номер телефону:</label>
+                    <input type="tel" id="tel" name="tel" class="form-text">
+                </div>
+                <div class="anot-text">
+                    <label for="fruit">Ви хочете щоб:</label>
+                    <select id="fruit" name="fruit">
+                        <option value="variant1">Вам зателефонували</option>
+                        <option value="variant2">Вам написали</option>
+                        <option value="variant3">Немає різниці</option>
+                    </select>
+                </div>
+
+                <div class="anot-text">
+                    <textarea id="message" name="message" rows="5" cols="60">Ваш коментар
+                </textarea>
+                </div>
+                <br>
+                <div>
+                    <button type="submit">Надіслати</button>
+                    <button type="reset">Скинути</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

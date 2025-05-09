@@ -1,5 +1,27 @@
 .container {
-    background-color: grey;
+    background-color: #eeeff1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 164%;
+}
+
+.content {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #34547a;
 }
 
 header.container,
@@ -15,4 +37,68 @@ header.container,
 .projects.container,
 footer.container {
     background-color: #34547a;
+}
+
+.about-me.container {
+    background-color: #f9f9f9;
+}
+
+.menu {
+    padding-top: 79px;
+    padding-bottom: 81px;
+}
+
+.menu__nav {
+}
+
+.menu__items {
+    display: flex;
+    gap: 45px;
+}
+
+.menu__item {
+    letter-spacing: 10%;
+    color: black;
+}
+
+.design-layout {
+    padding-top: 81px;
+    padding-bottom: 141px;
+}
+
+.design-layout__title {
+    font-weight: 500;
+    font-size: 48px;
+    margin-bottom: 60px;
+    color: black;
+}
+
+.design-layout__text {
+    width: 540px;
+    padding-bottom: 65px;
+}
+
+.design-layout__cta {
+    letter-spacing: 1.6px;
+    background-color: #34547a;
+    border: none;
+    outline: none;
+    padding: 24.5px 51px;
+    color: white;
+    line-height: 1;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.about-me {
+}
+
+.about-me__title {
+}
+
+.about-me__text {
+}
+
+footer {
+    word-break: break-word;
 }

@@ -1,0 +1,101 @@
+
+body {
+    font-family: Arno Pro;
+    background-color: rgb(255, 244, 232);
+    color:  #331a00;
+    margin: 0%;
+}
+
+.main_img {
+    width: 100vw;
+    height: 400px;
+    font-size: 32px;
+    background-image: url('../images/background.jpg');
+    background-size: cover; 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image img{
+    width: 300px;
+    height: auto;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.image1 img{
+    width: 400px;
+    height: auto;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.another{
+    overflow: scroll;
+    width: 1000px;
+    height: 300px;
+}
+
+.anot-text {
+    margin-bottom: 15px;
+    margin-top: 7px;
+    box-sizing: border-box;
+}
+
+
+.main-selecctor {
+    padding: 0.2em;
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-text {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+
+.menu {
+    margin-bottom: 1em;
+}
+
+.menu a {
+    display: block;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+.menu2 a {
+    display: block;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+
+h2 {
+    margin-top: 25px;
+    margin-bottom: 12px;
+    font-size: 32px;
+}
+
+h3 {
+    margin-top: 25px;
+    margin-bottom: 12px;
+    font-size: 32px;
+}
+
+p {
+    font-size: 18px;
+}
+
+form {
+    width: 55%;
+
+}
