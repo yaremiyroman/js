@@ -1,0 +1,19 @@
+body {
+    @extend %mainFont;
+    color: #727272;
+}
+
+a {
+    @extend %mainFont;
+    color: black;
+}
+
+@media (max-width: 960px) {
+    body {
+        font-size: $mobileFontSize;
+    }
+
+    a {
+        font-size: $mobileFontSize;
+    }
+}

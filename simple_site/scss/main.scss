@@ -1,0 +1,98 @@
+%title {
+    font-weight: 500;
+    font-size: 48px;
+    margin-bottom: 60px;
+    color: black;
+}
+
+header.container,
+.way-of-work.container,
+.design-layout.container {
+    background-color: #eeeff1;
+}
+
+.about-me.container {
+    background-color: #f9f9f9;
+}
+
+.projects.container,
+footer.container {
+    background-color: $brand;
+}
+
+.menu {
+    padding-bottom: 81px;
+}
+
+.menu__items {
+    display: flex;
+    gap: 45px;
+}
+
+.menu__item {
+    letter-spacing: 10%;
+    color: black;
+}
+
+.menu {
+    padding-bottom: 81px;
+
+    &__items {
+        display: flex;
+        gap: 45px;
+    }
+}
+
+.menu {
+    padding-bottom: 81px;
+}
+
+.menu__items {
+    display: flex;
+    gap: 45px;
+}
+
+.sub-menu {
+    padding-bottom: 81px;
+}
+
+.sub-menu menu__nav .menu__items {
+    display: flex;
+    gap: 45px;
+}
+
+.sub-menu menu__nav .menu__items .menu__item {
+    letter-spacing: 10%;
+    color: black;
+}
+
+.design-layout {
+    padding-top: 81px;
+    padding-bottom: 141px;
+}
+
+.about-me__title,
+.design-layout__title {
+    @extend %title;
+}
+
+.design-layout__text {
+    width: 540px;
+    padding-bottom: 65px;
+}
+
+.design-layout__cta {
+    letter-spacing: 1.6px;
+    background-color: $brand;
+    border: none;
+    outline: none;
+    padding: 24.5px 51px;
+    color: white;
+    line-height: 1;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer {
+    word-break: break-word;
+}
