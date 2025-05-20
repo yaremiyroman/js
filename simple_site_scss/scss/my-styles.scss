@@ -1,0 +1,41 @@
+@import './another-styles.scss';
+
+$textColor: red;
+$fontFamily: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+@mixin fontStyles($borderRadius) {
+    color: $textColor;
+    font-family: $fontFamily;
+    border: 1px solid green;
+    border-radius: $borderRadius;
+}
+
+%square {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    display: block;
+}
+
+.container {
+    border: 5px solid green;
+
+    .content {
+        background-color: yellow;
+
+        .about-me__title {
+            @include fontStyles(10px);
+            @extend %square
+        }
+
+        .design-layout__title {
+            @include fontStyles(15px);
+        }
+
+        .design-layout__text {
+            @include fontStyles(20px);
+        }
+    }
+}
+
+

@@ -1,0 +1,37 @@
+* * {
+  background-color: green !important;
+}
+
+.container .content .about-me__title {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  display: block;
+}
+
+.container {
+  border: 5px solid green;
+}
+.container .content {
+  background-color: yellow;
+}
+.container .content .about-me__title {
+  color: red;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: 1px solid green;
+  border-radius: 10px;
+}
+.container .content .design-layout__title {
+  color: red;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: 1px solid green;
+  border-radius: 15px;
+}
+.container .content .design-layout__text {
+  color: red;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: 1px solid green;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=my-styles.css.map */
