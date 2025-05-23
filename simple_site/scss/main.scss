@@ -20,11 +20,6 @@ footer.container {
     background-color: $brand;
 }
 
-
-
-
-
-
 .menu {
     padding-bottom: 81px;
 }
@@ -39,10 +34,6 @@ footer.container {
     color: black;
 }
 
-
-
-
-
 .menu {
     padding-bottom: 81px;
 
@@ -52,28 +43,23 @@ footer.container {
     }
 }
 
-
-
-
 .menu {
     padding-bottom: 81px;
+
+    @media (max-width: map-get($grid-breakpoints, lg)) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    @media (max-width: map-get($grid-breakpoints, md)) {
+        padding-bottom: 20px;
+    }
 }
 
 .menu__items {
     display: flex;
     gap: 45px;
-}
-
-
-
-
-
-
-
-
-
-
-
+}2
 
 .sub-menu {
     padding-bottom: 81px;
@@ -119,7 +105,3 @@ footer.container {
 footer {
     word-break: break-word;
 }
-
-
-
-

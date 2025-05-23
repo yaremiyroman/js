@@ -1,0 +1,31 @@
+.menu {
+    .content {
+        padding: {
+            top: 17px;
+            bottom: 16px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        margin: 0 auto;
+        width: fit-content;
+        gap: 30px;
+    }
+
+    &__item {
+        // margin-right: 30px;
+
+        // &:last-child {
+        //     margin-right: 0;
+        // }
+        // line-height: 1;
+        height: 17px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        color: #333;
+    }
+}

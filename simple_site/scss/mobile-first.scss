@@ -1,0 +1,76 @@
+/* Desktop first */
+
+
+/* Mobile */
+// 768
+@media (min-width: map-get($mobile-breakpoints, md)) {
+    * * {
+        background-color: blue;
+    }
+    .content {
+        width: 100%;
+    }
+
+    .menu {
+        padding-bottom: 20px;
+    }
+
+    .design-layout {
+        padding-top: 20px;
+        padding-bottom: 35px;
+    }
+
+    .design-layout__title {
+        margin-bottom: 0;
+        font-size: 32px;
+    }
+
+    .design-layout__cta {
+        font-size: 12px;
+    }
+
+    .content {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .design-layout__text {
+        padding-bottom: 10px;
+        width: 100%;
+    }
+
+    .menu {
+        padding-bottom: 0;
+    }
+}
+
+
+/* Tablet */
+// 992px
+@media (min-width: map-get($mobile-breakpoints, lg)) {
+    * * {
+        background-color: red;
+    }
+    .content {
+        width: 740px;
+    }
+
+    .menu {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .design-layout {
+        padding-top: 40px;
+        padding-bottom: 70px;
+    }
+
+    .design-layout__title {
+        margin-bottom: 30px;
+        font-size: 40px;
+    }
+
+    .design-layout__cta {
+        font-size: 14px;
+    }
+}

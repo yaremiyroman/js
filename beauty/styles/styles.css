@@ -1,0 +1,86 @@
+a, body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+}
+
+body {
+  color: #727272;
+}
+
+a {
+  color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+.container {
+  background-color: white;
+}
+
+.menu {
+  background-color: #efefef;
+}
+
+.hero {
+  background-color: #f13c6e;
+}
+
+.content {
+  width: 1110px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content padding {
+  left: 10px;
+  right: 10px;
+}
+@media (max-width: 992px) {
+  .content {
+    width: 740px;
+  }
+}
+@media (max-width: 768px) {
+  .content {
+    width: 100%;
+  }
+}
+
+.menu .content {
+  padding-top: 17px;
+  padding-bottom: 16px;
+}
+.menu__list {
+  display: flex;
+  margin: 0 auto;
+  width: fit-content;
+  gap: 30px;
+}
+.menu__item {
+  height: 17px;
+  display: flex;
+  align-items: center;
+}
+.menu__link {
+  color: #333;
+}
+
+/*# sourceMappingURL=styles.css.map */
