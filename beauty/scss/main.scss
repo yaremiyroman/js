@@ -1,3 +1,9 @@
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .menu {
     .content {
         padding: {
@@ -27,5 +33,128 @@
 
     &__link {
         color: #333;
+    }
+}
+
+.header {
+    border-bottom: 1px solid #efefef;
+
+    .content {
+        display: flex;
+        padding: {
+            top: 20px;
+            bottom: 20px;
+        }
+        align-items: center;
+        // background-color: red;
+    }
+
+    &__logo {
+        margin-right: auto;
+    }
+
+    &__logo-link {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__logo-img {
+    }
+
+    &__logo-text {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 39px;
+        letter-spacing: 3.6px;
+        color: $brandColor;
+        text-transform: uppercase;
+    }
+
+    &__phone {
+        margin-right: 40px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    &__call-back {
+    }
+
+    &__call-back-button {
+        padding: 11px 56px 10px;
+        border: 2px solid $brandColor;
+        border-radius: 40px;
+        background-color: white;
+        line-height: 15px;
+        cursor: pointer;
+    }
+}
+
+.sub-menu {
+    background-color: white;
+
+    .content {
+        padding: {
+            top: 30px;
+            bottom: 30px;
+        }
+    }
+
+    .menu__item {
+        line-height: 19px;
+        height: 19px;
+    }
+
+    .menu__link {
+        line-height: 19px;
+    }
+}
+
+.hero {
+    background-color: $brandColor;
+
+    .content {
+        padding: {
+            top: 192px;
+            bottom: 193px;
+        }
+
+        color: white;
+    }
+
+    &__image-container {
+        width: fit-content;
+        background-color: #f57699;
+        padding: 100px;
+        border-radius: 50%;
+        width: 800px;
+        height: 800px;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+    }
+
+    &__image {
+        width: auto;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 44px;
+        margin-bottom: 50px;
+    }
+
+    &__description {
+        line-height: 20px;
+        margin-bottom: 30px;
+        width: 261px;
+    }
+
+    &__cta {
+        @extend .header__call-back-button;
+        background-color: $brandColor;
+        border-color: white;
+        color: white;
     }
 }
