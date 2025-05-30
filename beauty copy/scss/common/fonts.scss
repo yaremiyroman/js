@@ -1,0 +1,9 @@
+body {
+    @extend %mainFont;
+    color: #727272;
+}
+
+a {
+    @extend %mainFont;
+    color: black;
+}
