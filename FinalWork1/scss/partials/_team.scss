@@ -1,0 +1,150 @@
+.team {
+    display: flex;
+    margin-top: 60px;
+    flex-direction: column;
+
+    @media screen and (max-width: 647px) {
+        margin-top: 30px;
+    }
+
+    &__content {
+        flex-direction: column;
+        
+    }
+
+    &__main-part {
+        display: flex;
+
+        @media screen and (max-width: 903px) {
+            display: block;
+        }
+    }
+
+    &__img-wrapper {
+        width: 400px;
+        height: 298px;
+        border-radius: 12px 0px 0px 12px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        background: #F5F5FA;
+
+        @media screen and (max-width: 1599px) {
+            height: 344px;
+        }
+
+        @media screen and (max-width: 1319px) {
+            height: 528px;
+        }
+
+        @media screen and (max-width: 903px) {
+            width: 648px;
+            height: 500px;
+        }
+
+        @media screen and (max-width: 647px) {
+            width: 100%;
+        }
+    }
+
+        &__man {
+        width: initial;
+        height: initial;
+        }
+
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 2.8;
+        padding: 30px;
+        background: #F5F5FA;
+
+        @media screen and (max-width: 1319px) {
+            flex: 1.1;
+        }
+
+        @media screen and (max-width: 903px) {
+            flex: 1;
+        }
+
+
+    }
+
+
+    &__breadcrumb {
+        color: #24A3FF;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        position: relative;
+        margin-bottom: 5px;
+
+        &:hover {
+            color: #F0145A;
+
+        }
+
+        &::after {
+            content: ' \003E';
+            position: absolute;
+            left: calc(100%);
+            display: block;
+            padding: 2.5px;
+        }
+    }
+
+    &__slogan {
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 46px;
+        background: var(--gradient-red-text, linear-gradient(118deg, #F0145A 0%, #EF8080 100%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 647px) {
+            font-size: 30px;
+            line-height: 36px;
+        }
+    }
+
+    &__surname {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        color: #B3B3BA;
+        margin-bottom: 6px;
+
+    }
+
+    &__job {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        color: #B3B3BA;
+
+    }
+
+    &__pagination {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    &__link {
+        &--active {
+        pointer-events: none;
+        }
+    }
+}

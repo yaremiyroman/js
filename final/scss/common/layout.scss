@@ -1,0 +1,33 @@
+.container {
+}
+
+.content {
+    width: map-get($width, desktop-first);
+    height: 100vw;
+    margin: {
+        top: 0;
+        bottom: 0;
+        left: auto;
+        right: auto;
+    }
+
+    @media (max-width: map-get($grid-breakpoints, xl)) {
+        width: map-get($width, xl);
+    }
+
+    @media (max-width: map-get($grid-breakpoints, lg)) {
+        width: map-get($width, lg);
+    }
+
+    @media (max-width: map-get($grid-breakpoints, md)) {
+        width: map-get($width, md);
+    }
+
+    @media (max-width: map-get($grid-breakpoints, sm)) {
+        width: map-get($width, sm);
+        padding: {
+            left: 30px;
+            right: 30px;
+        };
+    }
+}

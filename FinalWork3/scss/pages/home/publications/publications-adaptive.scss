@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+  .publications {
+    &__card-list {
+      flex-direction: column;
+    }
+    &__title{
+      font-size: 25px;
+    }
+  }
+}

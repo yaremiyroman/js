@@ -1,0 +1,104 @@
+.contacts {
+    background: #F5F5FA;
+    padding: 30px 0px;
+
+    &__content {
+        padding-top: 30px;
+        border-top: 2px solid #E6E6F0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @media screen and (max-width: 647px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__adress-data {
+        display: flex;
+        align-items: center;
+        margin-bottom: 21px;
+
+        @media screen and (max-width: 647px) {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    &__adress {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #323264;
+
+        @include dot-2;
+    }
+
+    &__map {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 1px;
+        color: #24A3FF;
+        text-decoration: none;
+
+
+    }
+
+    &__data {
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 647px) {
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__social {
+        @include dot-2;
+
+
+    }
+
+    &__phone {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: right;
+        color: #46466E;
+
+        @include dot-2;
+    }
+
+    &__email {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        color: #24A3FF;
+
+    }
+
+    &__legal {
+        margin-left: auto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: right;
+        color: #B3B3BA;
+
+        @media screen and (max-width: 647px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    }
+}

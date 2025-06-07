@@ -1,0 +1,41 @@
+.header{
+  background-image: $gradient-supersoft;
+  position: relative;
+  margin-bottom: 20px;
+
+  &__center-logo{
+    width: 873px;
+    height: 1000px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 0;
+  }
+
+  &::after, &::before{
+    position: absolute;
+    content: "";
+    display: block;
+    height: 10px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    bottom: 0;
+    left: 50%;
+  }
+
+  &::before {
+    width: calc(100% - 40px);
+    transform: translateX(-50%) translateY(20px);
+    background-color: #E7E7F2;
+    margin: auto;
+  }
+
+  &::after {
+    width: calc(100% - 20px);
+    transform: translateX(-50%) translateY(10px);
+    background-color: #CACADB;
+    margin: auto;
+  }
+
+
+}

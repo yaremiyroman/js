@@ -1,0 +1,26 @@
+@media (max-width: 1440px) {
+  .header{
+    &__center-logo{
+      width: 697px;
+      height: 800px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header{
+    &__center-logo{
+      width: 893px;
+      height: 1024px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .header{
+    &__center-logo{
+      width: 525px;
+      height: 600px;
+    }
+  }
+}

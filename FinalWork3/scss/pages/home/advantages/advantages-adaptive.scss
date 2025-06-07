@@ -1,0 +1,32 @@
+@media (max-width: 1440px) {
+  .advantages {
+    &__menu-list {
+      padding-left: 0;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .advantages {
+    &__content {
+      flex-direction: column;
+    }
+    &__menu-list {
+      flex-wrap: wrap;
+      padding-right: 0;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__menu-container {
+      border-right: none;
+      border-bottom: 4px white solid;
+      padding-bottom: 20px;
+    }
+    &__info {
+      padding: 40px 0 0 0;
+    }
+    &__menu-item-link {
+      font-size: 25px;
+    }
+  }
+}

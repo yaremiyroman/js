@@ -1,0 +1,70 @@
+.footer {
+  background-color: $bg;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &__info {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    align-items: center;
+  }
+
+  &__dot {
+    color: $text;
+  }
+
+  &__map {
+    color: $active-regular;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  &__licence {
+    margin-left: auto;
+    color: $text;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &__media {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  &__number {
+    color: $alt;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &__facebook-logo {
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+  }
+
+  &__email {
+    color: $active-regular;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

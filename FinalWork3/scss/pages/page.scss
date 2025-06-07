@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+
+html, body, p, h1, h2, h3, h4, h5, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  text-transform: none;
+}
+
+a, body {
+  font-family: 'Montserrat', sans-serif;
+  color: $main;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.content {
+  max-width: 1610px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+.tab {
+  color: $active-regular;
+  text-transform: uppercase;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.tab-arrow path {
+  stroke: $active-regular;
+}
+
+.tab--hover, .tab:hover {
+  color: $accent !important;
+
+  svg {
+    path {
+      stroke: $accent;
+    }
+  }
+}

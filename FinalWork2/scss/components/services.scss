@@ -1,0 +1,54 @@
+.header-services {
+    .header-inner {
+        .logo {
+            padding-right: 40px;
+            padding-right: 0;
+
+
+            span {
+                font-size: 38px;
+                color: $white-color;
+                position: relative;
+                margin-left: 21px;
+                display: block;
+
+                &::before {
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    max-height: 42px;
+                    left: -18px;
+
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+
+.main-services .trust-us-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0 0;
+
+    strong {
+        margin-bottom: 30px;
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        &.header-services {
+            .services-wrapper {
+                margin-top: 20px;
+            }
+        }
+    }
+}

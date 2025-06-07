@@ -1,0 +1,87 @@
+.companies {
+  background-color: white;
+
+  &__content {
+    max-width: 1730px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 60px;
+  }
+
+  &__title {
+    color: $main;
+    margin-bottom: 30px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    padding-top: 20px;
+  }
+
+  &__card-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  &__card {
+    width: 25%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__card:nth-child(1) {
+    background-color: #1C4280;
+  }
+
+  &__card:nth-child(2) {
+    background-color: #143646;
+  }
+
+  &__card:nth-child(3) {
+    background-color: #F48B30;
+  }
+
+  &__card:nth-child(4) {
+    background-color: #9E4DC3;
+  }
+
+  &__card:nth-child(5) {
+    background-color: #FD9339;
+  }
+
+  &__card:nth-child(6) {
+    background-color: #E2E2E4;
+  }
+
+  &__card:nth-child(7) {
+    background-color: #C71C36;
+  }
+
+  &__card:nth-child(8) {
+    background-color: #DCF3F9;
+  }
+
+  &__card:nth-child(9) {
+    background-color: #EAEAEA;
+  }
+
+  &__card:nth-child(10) {
+    background-color: #282240;
+  }
+
+  &__card:nth-child(11) {
+    background-color: #1D4568;
+  }
+
+  &__card:nth-child(12) {
+    background-color: #000000;
+  }
+}
+

@@ -1,0 +1,191 @@
+@import 'variables';
+
+@media screen and (max-width: 1024px) {
+    .header {
+        .header-inner {
+            &.container {
+                .logo {
+                    margin-bottom: 15px;
+                }
+
+                .header-right-wrapper {
+                    .overlay-wrapper {
+                        .nav-wrapper {
+                            .nav {
+                                .link {
+                                    &:first-child {
+                                        margin-left: 0;
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .container {
+        .team-slider-wrapper {
+
+            .team-slider-items {
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+
+                .team-image {
+                    margin-bottom: 0;
+
+
+                }
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 850px) {
+    .header {
+        .header-inner {
+            flex-wrap: wrap;
+
+            .logo {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 904px;
+    }
+
+    .services-wrapper {
+        padding: 0;
+
+        .services-inner {
+            .column-three {
+                width: 50%;
+
+                .services-item {
+                    .services-icon {
+
+                        width: 64px;
+                        height: 64px;
+
+                        img {
+                            width: -webkit-fill-available;
+                        }
+                    }
+
+                    .services-content {
+                        a {
+                            h3 {
+                                font-size: $base-font-size;
+                                line-height: 21px;
+                            }
+                        }
+
+                        p {
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    .bg-publlications {
+        .publications-wrapper {
+            &.container {
+                width: 900px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+    .services-wrapper {
+        &.container {
+            width: 800px;
+        }
+    }
+
+    .bg-publlications {
+        .publications-wrapper {
+            &.container {
+                max-width: 700px;
+
+                .publication-content-inner {
+                    justify-content: center;
+
+                    .column-three {
+                        width: 50%;
+
+                        &:nth-child(3) {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .container {
+        max-width: 650px;
+    }
+
+    .services-wrapper {
+        &.container {
+            width: 700px;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 1024px) {
+    .services-tabs-wrapper {
+        .container {
+            .wrap-myvertical-tabs {
+                .myvertical-tabs {
+                    li {
+                        font-size: 30px;
+                        line-height: 33px;
+                    }
+                }
+
+                .myvertical-tabs-content-wrap {
+                    .myvertical-tabs-content {
+                        h3 {
+                            font-size: 22px;
+                            line-height: 26px;
+                        }
+
+                        p {
+                            font-size: $base-font-size;
+                            line-height: 26px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+
+/*footer*/

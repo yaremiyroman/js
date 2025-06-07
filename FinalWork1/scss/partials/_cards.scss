@@ -1,0 +1,111 @@
+.cards {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+    padding-top: 60px;
+
+
+    &__breadcrumbs {
+        margin-bottom: 10px;  
+    }
+
+    &__breadcrumb {
+        color: #24A3FF;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        position: relative;
+
+        &:hover {
+            color: #F0145A;
+
+        }
+
+        &::after {
+            content: ' \003E';
+            position: absolute;
+            left: calc(100%);
+            display: block;
+            padding: 2.5px;
+        }
+    }
+
+    &__title {
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 46px;
+        background: var(--gradient-red-text, linear-gradient(118deg, #F0145A 0%, #EF8080 100%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 60px;
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+
+        @media screen and (max-width: 647px) {
+            gap: 30px;
+        }
+    }
+
+    &__card {
+        width: 30%;
+
+        @media screen and (max-width: 1319px) {
+            width: 28%;
+        }
+
+        @media screen and (max-width: 903px) {
+            width: 45%;
+        }
+
+        @media screen and (max-width: 647px) {
+            width: fit-content;
+        }
+    }
+
+    &__card-image-wrapper {
+        width: 92px;
+        height: 92px;
+        padding: 14px;
+        border-radius: 24px;
+        gap: 10px;
+        background: #FFFFFF;
+        margin-bottom: 30px;
+    }
+
+    &__card-title {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 27px;
+        color: #24A3FF;
+
+    }
+
+    &__card-body {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        margin-top: 15px;
+    }
+
+    &__card-link {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 27px;
+        color: #24A3FF;
+    
+        &:hover {
+            color: #F0145A;
+
+        }
+
+    }
+}

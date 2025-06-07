@@ -1,0 +1,57 @@
+* * {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    margin: 0px;
+
+}
+
+div {
+    display: block;
+}
+
+.content {
+    max-width: $desktopHD;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+
+    @media screen and (max-width: 1599px) {
+        max-width: $desktopSD;
+    }
+
+    @media screen and (max-width: 1319px) {
+        max-width: $tabletHD;
+    }
+
+    @media screen and (max-width: 903px) {
+        max-width: $tabletSD;
+    }
+
+    @media screen and (max-width: 647px) {
+        max-width: $mobileWidth;
+        margin: {
+            left: 20px;
+            right: 20px;
+        };
+    }
+        
+}
+
+
+.main {
+    color: #FFFFFF;
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    
+    
+
+}
+
+

@@ -1,0 +1,19 @@
+// vars
+@import 'settings';
+
+@import 'variables';
+@import 'breakpoints';
+
+
+
+
+
+// common
+@import 'main';
+@import './components/services.scss';
+
+// resposive
+@import 'desktop';
+@import 'tablet-hd';
+@import 'tablet-sd';
+@import 'mobile';

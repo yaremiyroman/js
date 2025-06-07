@@ -1,0 +1,89 @@
+
+.publications{
+  background-color: $bg;
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__tab{
+    padding-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  &__tab-arrow{
+
+  }
+
+  &__title{
+    background-image: $gradient-red-text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    margin-bottom: 30px;
+
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+  }
+
+  &__card-list{
+    display: flex;
+    gap: 30px;
+    padding-bottom: 30px;
+    border-bottom: 4px $separator solid;
+  }
+
+  &__card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  &__card-img{
+    width: 100%;
+    height: max-content;
+    margin-bottom: 30px;
+  }
+
+  &__card-title{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+    color: $active-regular;
+    cursor: pointer;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &__date{
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-bottom: 15px;
+    border-bottom: 4px $separator solid;
+    margin-bottom: 15px;
+    color: $text;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  &__description{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    color: black;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+

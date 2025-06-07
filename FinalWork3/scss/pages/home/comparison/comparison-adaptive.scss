@@ -1,0 +1,32 @@
+@media (max-width: 768px) {
+  .comparison {
+    &__card {
+      width: auto;
+      max-width: calc(50% - 10px);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__card-list {
+      gap: 20px;
+    }
+
+    &__title {
+      font-size: 25px;
+    }
+
+    &__card-title {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .comparison {
+    &__card {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}

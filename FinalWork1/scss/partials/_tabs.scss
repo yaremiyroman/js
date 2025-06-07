@@ -1,0 +1,106 @@
+.tabs {
+    display: flex;
+    margin-bottom: 60px;
+    padding: 0px 120px;
+
+    @media screen and (max-width: 1319px) {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    @media screen and (max-width: 903px) {
+        flex-direction: column;
+        padding: 0px;
+
+    }
+
+    @media screen and (max-width: 647px) {
+        margin-bottom: 30px;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        box-sizing: content-box;
+        padding-right: 60px;
+        border-right: 4px solid rgba(255, 255, 255, 0.30);
+        padding-top: 14.5px;
+        padding-bottom: 14.5px;
+
+        @media screen and (max-width: 903px) {
+            border-right: none;
+            border-bottom: 4px solid rgba(255, 255, 255, 0.30);
+            padding-bottom: 60px;
+            flex-direction: row;
+            overflow-x: scroll;
+            justify-content: unset;
+        }
+
+        @media screen and (max-width: 647px) {
+            padding-bottom: 30px;
+        }
+    }
+
+    &__link {
+        color: #B3B3BA;
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 46px;
+        text-align: right;
+        white-space: nowrap;
+        width: 375px;
+
+        &:hover {
+            color: #F0145A;
+
+        }
+
+        &--active {
+            background: var(--gradient-text-red-reversed, linear-gradient(118deg, #EF8080 0%, #F0145A 100%));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            pointer-events: none;
+        }
+
+
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        width: 861px;
+        margin-left: 60px;
+
+
+
+        @media screen and (max-width: 903px) {
+            margin-left: 0px;
+            margin-top: 60px;
+            width: 648px;
+        }
+
+        @media screen and (max-width: 647px) {
+            margin-top: 30px;
+            width: 100%;
+        }
+    }
+
+    &__title {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 37px;
+    
+    }
+
+    &__body {
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 30px;
+
+
+    }
+}

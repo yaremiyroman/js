@@ -1,0 +1,93 @@
+@media screen and (max-width: 1024px) {
+  .header .header-inner.container .logo {
+    margin-bottom: 15px;
+  }
+  .header .header-inner.container .header-right-wrapper .overlay-wrapper .nav-wrapper .nav .link:first-child {
+    margin-left: 0;
+  }
+  .container .team-slider-wrapper .team-slider-items {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .team-slider-wrapper .team-slider-items .team-image {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 850px) {
+  .header .header-inner {
+    flex-wrap: wrap;
+  }
+  .header .header-inner .logo {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 904px;
+  }
+  .services-wrapper {
+    padding: 0;
+  }
+  .services-wrapper .services-inner .column-three {
+    width: 50%;
+  }
+  .services-wrapper .services-inner .column-three .services-item .services-icon {
+    width: 64px;
+    height: 64px;
+  }
+  .services-wrapper .services-inner .column-three .services-item .services-icon img {
+    width: -webkit-fill-available;
+  }
+  .services-wrapper .services-inner .column-three .services-item .services-content a h3 {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .services-wrapper .services-inner .column-three .services-item .services-content p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .bg-publlications .publications-wrapper.container {
+    width: 900px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .services-wrapper.container {
+    width: 800px;
+  }
+  .bg-publlications .publications-wrapper.container {
+    max-width: 700px;
+  }
+  .bg-publlications .publications-wrapper.container .publication-content-inner {
+    justify-content: center;
+  }
+  .bg-publlications .publications-wrapper.container .publication-content-inner .column-three {
+    width: 50%;
+  }
+  .bg-publlications .publications-wrapper.container .publication-content-inner .column-three:nth-child(3) {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .container {
+    max-width: 650px;
+  }
+  .services-wrapper.container {
+    width: 700px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .services-tabs-wrapper .container .wrap-myvertical-tabs .myvertical-tabs li {
+    font-size: 30px;
+    line-height: 33px;
+  }
+  .services-tabs-wrapper .container .wrap-myvertical-tabs .myvertical-tabs-content-wrap .myvertical-tabs-content h3 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .services-tabs-wrapper .container .wrap-myvertical-tabs .myvertical-tabs-content-wrap .myvertical-tabs-content p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+/*footer*//*# sourceMappingURL=tablet-hd.css.map */

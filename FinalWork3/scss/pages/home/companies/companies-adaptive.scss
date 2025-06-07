@@ -1,0 +1,38 @@
+@media (max-width: 1440px) {
+  .companies {
+    &__content {
+      max-width: 1730px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .companies {
+    &__card-img{
+      transform: scale(70%);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .companies {
+    &__card {
+      width: calc(1 / 3 * 100%);
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .companies {
+    &__card {
+      width: calc(50%);
+    }
+  }
+}
+

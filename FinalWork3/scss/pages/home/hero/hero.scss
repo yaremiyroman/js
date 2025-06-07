@@ -1,0 +1,28 @@
+.hero {
+
+  *{
+    z-index: 1;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 90px;
+  }
+
+  &__title {
+    color: white;
+    text-align: center;
+    padding-bottom: 405px;
+    padding-top: 367px;
+
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+  }
+
+  &__btn {
+
+  }
+}

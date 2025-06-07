@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+  .footer {
+    &__info {
+      flex-direction: column;
+    }
+    &__media {
+      flex-direction: column;
+    }
+    &__licence {
+      margin-left: auto;
+      margin-right: auto;
+      color: $text;
+    }
+  }
+}

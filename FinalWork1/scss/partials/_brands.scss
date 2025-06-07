@@ -1,0 +1,105 @@
+.brands {
+    display: flex;
+    flex-direction: column;
+    max-width: 1720px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+
+    @media screen and (max-width: 1599px) {
+        margin-bottom: 0px;
+        }
+
+    @media screen and (max-width: 647px) {
+        margin-left: 0px;
+        margin-right: 0px;
+        }
+
+    &__title {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 1px;
+        margin: 0px auto 30px;
+        color: #323264;
+
+    }
+
+    &__companies {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+
+    &__brand {
+        display: flex;
+        width: 25%;
+        height: 120px;
+        justify-content: center;
+        align-items: center;
+
+        &:nth-child(1) {
+            background: #1C4280;
+        }
+
+        &:nth-child(2) {
+            background: #143646;
+        }
+
+        &:nth-child(3) {
+            background: #F48B30;
+        }
+
+        &:nth-child(4) {
+            background: #9E4DC3;
+        }
+
+        &:nth-child(5) {
+            background: #FD9339;
+        }
+
+        &:nth-child(6) {
+            background: #E2E2E4;
+        }
+
+        &:nth-child(7) {
+            background: #C71C36;
+        }
+
+        &:nth-child(8) {
+            background: #DCF3F9;
+        }
+
+        &:nth-child(9) {
+            background: #EAEAEA;
+        }
+
+        &:nth-child(10) {
+            background: #282240;
+        }
+
+        &:nth-child(11) {
+            background: #1D4568;
+        }
+
+        &:nth-child(12) {
+            background: #000000;
+        }
+
+        @media screen and (max-width: 903px) {
+            width: 33.3%;
+        }
+
+        @media screen and (max-width: 647px) {
+            width: 100%;
+
+        }
+
+        @media screen and (max-width: 647px) {
+            &:nth-child(n+7) {
+                display: none;
+            }
+        }
+    }
+
+}
