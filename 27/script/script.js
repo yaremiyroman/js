@@ -8,7 +8,7 @@ const nextButton = document.getElementById('next');
 
 // constants
 const sliderRotationInterval = 40000;
-const slideWidth = 960; // px
+let slideWidth = 960; // px
 
 // state
 let currentSlideIndex = 0;
@@ -81,10 +81,6 @@ prevButton.addEventListener('click', () => {
     handleBackForward(false);
 });
 
-
-
-
-
 let startX = 0;
 let isMoving = false;
 
@@ -142,85 +138,3 @@ initDots();
 updateDots(currentSlideIndex);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function showSlide(idx) { // Number
-//     slides.forEach((slide, index) => {  // typeof index === 'number'
-//         if (index + 1 === idx) {
-//             slide.classList.add('active');
-//         } else if (slide.classList.contains('active')) {
-//             slide.classList.remove('active');
-//         }
-//     });
-// }
