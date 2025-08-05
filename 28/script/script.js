@@ -31,14 +31,7 @@ class Slider {
         this.#prevButton = document.getElementById(options.prevButtonId);
         this.#nextButton = document.getElementById(options.nextButtonId);
 
-
-
-
         this.#setSliderDimensions(options.sliderWidth);
-
-
-
-
 
         this.#sliderRotationInterval = options.sliderRotationInterval;
         this.#currentSlideIndex = 0;
