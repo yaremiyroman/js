@@ -1,0 +1,45 @@
+h1 {
+  color: red;
+}
+
+h2 {
+  color: blue;
+}
+
+h3 {
+  color: green;
+}
+
+p {
+  color: purple;
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+body {
+  color: green;
+}
