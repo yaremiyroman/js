@@ -1,5 +1,5 @@
 const board = [
-    [null, null, null], // data-row 0
+    ['X', '0', null], // data-row 0
     [null, null, null], // data-row 1
     [null, null, null], // data-row 2
 ];

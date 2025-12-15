@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Same Title Everywhere</title>
+    </head>
+
+    <body>
+
+        <div class="root">
+            <div class="item a">
+                <div class="itemInner a">A</div>
+                <div class="itemInner b" id="someId">BBB</div>
+                <div class="itemInner c">C</div>
+            </div>
+            <div class="item b">B</div>
+            <div class="item c">C</div>
+        </div>
+
+        <script>
+            const virtualDom = {
+                'item a': {
+                    content: ''
+                },
+                'item b': {
+                    content: 'B'
+                },
+                'item c': {
+                    content: 'C'
+                },
+                'itemInner a': {
+                    content: 'A',
+                    parent: 'item a'
+                },
+                'itemInner b': {
+                    content: 'AAA', // => 'AAA'
+                    parent: 'item a'
+                },
+                'itemInner c': {
+                    content: 'C',
+                    parent: 'item a',
+                    toDelete: true,
+                    id: 'someId'
+                }
+            }
+
+            function render(virtualDom) {
+                for (const key of virtualDom) {
+                    // rendering loginc
+
+                    if (virtualDom[key].toDelete === true) {
+                        document.getElementById('someId').remove
+                    }
+                }
+            }
+
+            render(virtualDom);
+        </script>
+
+        <script>
+            const myElem = document.getElementById('someId');
+            myElem.style.backgroundColor = 'yellow';
+
+
+            const $ = (someClass) => {
+                const elem = document.querySelector(`.${someClass}`);
+                console.log(elem);
+                return elem;
+            };
+
+            $('itemInner').style.backgroundColor = 'pink';
+        </script>
+
+    </body>
+
+</html>

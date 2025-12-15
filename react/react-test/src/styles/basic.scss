@@ -1,0 +1,11 @@
+@use './components/component1.scss';
+@use './components/component2.scss';
+
+body *  {
+    color: black;
+    font-size: 20px;
+}
+
+button.btn-pressed {
+    outline: 5px solid gold;
+}

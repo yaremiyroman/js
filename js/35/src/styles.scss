@@ -1,0 +1,31 @@
+body {
+    background-color: palegoldenrod;
+}
+
+
+
+.container {
+    display: flex;
+    width: 300px;
+    border: 1px solid red;
+}
+
+.item {
+    flex-basis: 150px;
+
+}
+
+.a {
+    background-color: red;
+    flex-shrink: 1;
+}
+
+.b {
+    background-color: green;
+    flex-shrink: 3;
+}
+
+.c {
+    background-color: blue;
+    flex-shrink: 1;
+}
